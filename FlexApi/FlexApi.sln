@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexApi", "FlexApi\FlexApi.csproj", "{C29AC745-F51E-4D06-83AB-88FCB5E33A89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexApi", "FlexApi\FlexApi.csproj", "{C29AC745-F51E-4D06-83AB-88FCB5E33A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.FlexeraApi", "Tests\Tests.FlexeraApi\Tests.FlexeraApi.csproj", "{503D5AD6-B58F-443D-A395-94B6961B4027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C29AC745-F51E-4D06-83AB-88FCB5E33A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C29AC745-F51E-4D06-83AB-88FCB5E33A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C29AC745-F51E-4D06-83AB-88FCB5E33A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503D5AD6-B58F-443D-A395-94B6961B4027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503D5AD6-B58F-443D-A395-94B6961B4027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503D5AD6-B58F-443D-A395-94B6961B4027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503D5AD6-B58F-443D-A395-94B6961B4027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
