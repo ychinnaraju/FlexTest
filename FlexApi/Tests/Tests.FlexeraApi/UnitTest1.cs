@@ -8,7 +8,7 @@ namespace Tests.FlexeraApi
 	public class UnitTest1
 	{
 		[TestMethod]
-		public void TestMethod1()
+		public void TestMethod1()	
 		{
 			var controller = new ValuesController();
 			var returnData = controller.Get();
