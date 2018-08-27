@@ -13,7 +13,7 @@ namespace FlexApi.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value22", "values3", "values5" };
+            return new string[] { "value1", "value22", "values3", "values5", "values6" };
         }
 
         // GET api/values/5
