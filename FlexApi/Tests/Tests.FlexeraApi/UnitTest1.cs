@@ -13,7 +13,7 @@ namespace Tests.FlexeraApi
 			var controller = new ValuesController();
 			var returnData = controller.Get();
 
-			Assert.AreEqual(3, returnData.Count());
+			Assert.AreEqual(4, returnData.Count());
 		}
 	}
 }
