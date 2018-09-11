@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="executables\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -21,6 +20,13 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Amazon.ElasticBeanstalk.Tools" Version="1.1.4" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="executables\test-hello-world.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
 
