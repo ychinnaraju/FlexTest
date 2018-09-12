@@ -14,7 +14,7 @@ namespace FlexApi.Controllers
 	{
 		[HttpPost]
 		[ActionName("AddFileEvidence")]
-		public IActionResult AddFileEvidence(FileEvidenceItem item )
+		public IActionResult AddFileEvidence([FromBody]FileEvidenceItem item )
 		{
 			return Ok(item.Id);
 
