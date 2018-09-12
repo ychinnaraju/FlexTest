@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NJsonSchema;
+using NSwag.AspNetCore;
+using System.Reflection;
 
 namespace FlexApi
 {
@@ -34,7 +37,16 @@ namespace FlexApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+			// Enable the Swagger UI middleware and the Swagger generator
+			app.UseSwaggerUi(typeof(Startup).GetTypeInfo().Assembly, settings =>
+			{
+				settings.GeneratorSettings.DefaultPropertyNameHandling =
+					PropertyNameHandling.CamelCase;
+			});
+
+			app.UseMvc();
+
+
         }
     }
 }
